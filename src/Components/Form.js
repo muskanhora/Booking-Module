@@ -72,19 +72,19 @@ const Form=()=>{
     
     return(
         <>
-        <form className="flex flex-col" onSubmit={handleSubmit}>
+        <form className="flex flex-col m-5 p-2" onSubmit={handleSubmit}>
             <label>
-                <input type="radio" name="facility" value="Clubhouse" className="border p-1 m-1" onChange={handleChange}/> Clubhouse
+                <input type="radio" required name="facility" value="Clubhouse" className="border p-1 m-1" onChange={handleChange}/> Clubhouse
             </label>
             <label>
-                <input type="radio" name="facility" value="Tennis Court" className="border p-1 m-1" onChange={handleChange}/> Tennis Court
+                <input type="radio" required name="facility" value="Tennis Court" className="border p-1 m-1" onChange={handleChange}/> Tennis Court
             </label>
             <label> Date:
-                <input type="date" name="date" className="border p-1 m-1" onChange={handleDatechange}/>
+                <input type="date" required name="date" className="border p-1 m-1" onChange={handleDatechange}/>
             </label>
             <label>From:
-                <select name="from" className="p-1 m-1 border" onChange={handleFromchange}>
-                    <option value="10">10am</option>
+                <select name="from" required className="p-1 m-1 border" onChange={handleFromchange}>
+                    <option selected value="10">10am</option>
                     <option value="11">11am</option>
                     <option value="12">12pm</option>
                     <option value="13">13pm</option>
@@ -100,7 +100,7 @@ const Form=()=>{
             </label>
             <label>To:
                 <select name="from" className="p-1 m-1 border" onChange={handleTochange}>
-                    <option value="11">11am</option>
+                    <option selected value="11">11am</option>
                     <option value="12">12pm</option>
                     <option value="13">13pm</option>
                     <option value="14">14pm</option>
