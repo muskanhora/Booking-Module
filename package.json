@@ -2,7 +2,6 @@
   "name": "facility-booking-module",
   "version": "1.0.0",
   "description": "apartment facility module",
-  "main": "app.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
